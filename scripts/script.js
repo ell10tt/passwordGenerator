@@ -35,11 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const newPassword = generatePassword(length, options);
         readyPassDiv.textContent = newPassword;
-        readyPassDiv.style.backgroundColor = "#D3D3D3";
+        readyPassDiv.style.backgroundColor = "#e7e7e7";
         readyPassDiv.style.padding = "10px";
-        readyPassDiv.style.borderRadius = "10px";
+        readyPassDiv.style.borderRadius = "20px";
         readyPassDiv.style.textAlign = "center";
         readyPassDiv.style.fontSize = "20px";
-        readyPassDiv.style.fontWeight = "bold";
+        readyPassDiv.style.width = "600px";
+        readyPassDiv.style.margin = "0 auto";
+        readyPassDiv.style.marginTop = "20px";
     });
 });

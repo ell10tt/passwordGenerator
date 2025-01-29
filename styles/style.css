@@ -5,4 +5,91 @@
 
 body {
   color: #000;
+  text-align: center;
+}
+
+.headling {
+  font-size: 62px;
+}
+
+.sub-headling {
+  font-size: 44px;
+}
+
+.simpleText {
+  font-size: 22px;
+}
+
+.passwordLengthHolder {
+  width: 200px;
+  height: 40px;
+  border-radius: 16px;
+  border-width: 0;
+  background-color: #e7e7e7;
+  padding-left: 32px;
+  font-size: 22px;
+}
+
+.passwordLengthHolder:active {
+  border-width: 0;
+}
+
+.passwordLengthHolder:hover {
+  background-color: #d8d8d8;
+  transition: 0.4s;
+}
+
+.generateBtn {
+  margin-top: 10px;
+  background-color: #218df1;
+  color: #fff;
+  font-size: 22px;
+  width: 200px;
+  height: 40px;
+  border-radius: 16px;
+  border-width: 0;
+}
+
+.generateBtn:hover {
+  background-color: #6db1f0;
+  transition: 0.2s;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderUpper, .sliderSymb, .sliderNumbers {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e7e7e7;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.sliderUpper:hover, .sliderSymb:hover, .sliderNumbers:hover {
+  background-color: #d8d8d8;
+}
+
+.switch input:checked + .sliderUpper,
+.switch input:checked + .sliderSymb,
+.switch input:checked + .sliderNumbers {
+  background-color: #218df1;
+}
+
+.creatorName {
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
