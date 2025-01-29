@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Password generator</title>
+</head>
+<body>
+    <script src="scripts/script.js"></script>
+    <h1 class="headling">Password Generator</h1>
+
+    <h2 class="sub-headling">Make your security stronger</h2>
+
+    <div class="passLenght">
+        <p class="simpleText">Password length</p>
+
+        <input type="number">
+    </div>
+
+    <div class="upper">
+        <p class="simpleText">Uppercase</p>
+
+        <label class="switch">
+            <input type="checkbox">
+
+            <span class="sliderUpper"></span>
+        </label>
+    </div>
+
+    <div class="symb">
+        <p class="simpleText">Symbols</p>
+
+        <label class="switch">
+            <input type="checkbox">
+
+            <span class="sliderSymb"></span>
+        </label>
+    </div>
+
+    <div class="numbers">
+        <p class="simpleText">Numbers</p>
+
+        <label class="switch">
+            <input type="checkbox">
+
+            <span class="sliderNumbers"></span>
+        </label>
+    </div>
+
+    <button class="generateBtn">Generate</button>
+
+    <div class="readyPass">
+    </div>
+
+    <footer>
+        <p class="simpleText footerName">maked by Vladyslav Serikov</p>
+    </footer>
+</body>
+</html>
