@@ -1,23 +1,46 @@
 * {
-    font-family: "Itim", serif;
-    font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    color: #000;
+    font-family: "Jaldi", serif;
+    font-weight: 400;
+
+    color: #fff;
     text-align: center;
+
+    background-image: url(../img/backgroundImage.jpg);
 }
 
-.headling {
-    font-size: 62px;
+
+.header {
+
+    .logoImg {
+        margin-top: 80px;
+        width: 128px;
+        height: 128px;
+    }
+
+    .headling {
+        font-size: 57px;
+        font-weight: 700;
+    }
 }
+
+
 
 .sub-headling {
-    font-size: 44px
+    font-size: 64px;
+    font-weight:400;
+}
+
+.menu {
+// add it after. we are here
 }
 
 .simpleText {
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .passwordLengthHolder {
@@ -95,6 +118,6 @@ body {
 }
 
 .creatorName {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 

@@ -5,51 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/icons/pcIconLogo.svg" type="image/x-icon">
     <title>Password generator</title>
 </head>
 <body>
     <script src="scripts/script.js"></script>
-    <h1 class="headling">Password Generator</h1>
+
+    <header class="header">
+        <img class="logoImg" src="img/icons/pcIconLogo.svg" alt="Password Generator Logo">
+        <h1 class="headling">Password Generator</h1>
+    </header>
 
     <h2 class="sub-headling">Make your security stronger</h2>
 
-    <div class="passLenght">
-        <p class="simpleText">Password length</p>
+    <!-- we are here -->
 
-        <input class="passwordLengthHolder" type="number">
+    <div class="menu">
+        <div class="passLenght">
+            <p class="simpleText">Password length</p>
+    
+            <input class="passwordLengthHolder" type="number">
+        </div>
+    
+        <div class="upper">
+            <p class="simpleText">Uppercase</p>
+    
+            <label class="switch">
+                <input class="sliderUpper" type="checkbox">
+    
+                <span class="sliderUpper"></span>
+            </label>
+        </div>
+    
+        <div class="symb">
+            <p class="simpleText">Symbols</p>
+    
+            <label class="switch">
+                <input class="sliderSymb" type="checkbox">
+    
+                <span class="sliderSymb"></span>
+            </label>
+        </div>
+    
+        <div class="numbers">
+            <p class="simpleText">Numbers</p>
+    
+            <label class="switch">
+                <input class="sliderNumbers" type="checkbox">
+    
+                <span class="sliderNumbers"></span>
+            </label>
+        </div>
     </div>
 
-    <div class="upper">
-        <p class="simpleText">Uppercase</p>
-
-        <label class="switch">
-            <input class="sliderUpper" type="checkbox">
-
-            <span class="sliderUpper"></span>
-        </label>
-    </div>
-
-    <div class="symb">
-        <p class="simpleText">Symbols</p>
-
-        <label class="switch">
-            <input class="sliderSymb" type="checkbox">
-
-            <span class="sliderSymb"></span>
-        </label>
-    </div>
-
-    <div class="numbers">
-        <p class="simpleText">Numbers</p>
-
-        <label class="switch">
-            <input class="sliderNumbers" type="checkbox">
-
-            <span class="sliderNumbers"></span>
-        </label>
-    </div>
 
     <button class="generateBtn">Generate</button>
 
