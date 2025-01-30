@@ -1,3 +1,8 @@
 # passwordGenerator
 
-This web application was created in order to understand how certain processes work and also to gain more experience
+This site was created to gain experience in developing WEB applications, as well as to create a future portfolio.
+
+Pictures taken from the site: https://unsplash.com/
+Icon: https://iconscout.com/
+
+created by ell10tt

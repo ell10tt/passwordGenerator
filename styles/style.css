@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 .header .logoImg {
-  margin-top: 80px;
+  margin-top: 40px;
   width: 128px;
   height: 128px;
 }
@@ -22,22 +23,46 @@ body {
 }
 
 .sub-headling {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 400;
 }
 
-.simpleText {
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.menu .simpleText {
   font-size: 30px;
 }
 
+.passLenght, .upper, .symb, .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
 .passwordLengthHolder {
-  width: 200px;
-  height: 40px;
+  width: 60px;
+  height: 34px;
+  text-align: center;
   border-radius: 16px;
   border-width: 0;
-  background-color: #e7e7e7;
-  padding-left: 32px;
+  background-color: #EAEAEA;
   font-size: 22px;
+}
+
+.passwordLengthHolder::-webkit-outer-spin-button,
+.passwordLengthHolder::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.passwordLengthHolder {
+  -moz-appearance: textfield; /* Для Firefox */
 }
 
 .passwordLengthHolder:active {
@@ -45,31 +70,8 @@ body {
 }
 
 .passwordLengthHolder:hover {
-  background-color: #d8d8d8;
+  background-color: #CBCBCB;
   transition: 0.4s;
-}
-
-.generateBtn {
-  margin-top: 10px;
-  background-color: #218df1;
-  color: #fff;
-  font-size: 22px;
-  width: 200px;
-  height: 40px;
-  border-radius: 16px;
-  border-width: 0;
-}
-
-.generateBtn:hover {
-  background-color: #6db1f0;
-  transition: 0.2s;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
 }
 
 .switch input {
@@ -78,28 +80,74 @@ body {
   height: 0;
 }
 
-.sliderUpper, .sliderSymb, .sliderNumbers {
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e7e7e7;
-  border-radius: 20px;
+  background-color: #CBCBCB;
   transition: 0.4s;
 }
 
-.sliderUpper:hover, .sliderSymb:hover, .sliderNumbers:hover {
-  background-color: #d8d8d8;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: 0.4s;
 }
 
-.switch input:checked + .sliderUpper,
-.switch input:checked + .sliderSymb,
-.switch input:checked + .sliderNumbers {
-  background-color: #218df1;
+input:checked + .slider {
+  background-color: #57BFE4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #57BFE4;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.generateBtn {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #57BFE4;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 22px;
+  border-width: 0;
+}
+
+.generateBtn:hover {
+  background-color: #489bb9;
+  transition: 1s;
+  transition: ease-in-out;
 }
 
 .creatorName {
-  margin-top: 90px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
 }/*# sourceMappingURL=style.css.map */

@@ -35,11 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const newPassword = generatePassword(length, options);
         readyPassDiv.textContent = newPassword;
-        readyPassDiv.style.backgroundColor = "#e7e7e7";
+        readyPassDiv.style.backgroundColor = "#CBCBCB";
+        readyPassDiv.style.color = "#000"
         readyPassDiv.style.padding = "10px";
         readyPassDiv.style.borderRadius = "20px";
         readyPassDiv.style.textAlign = "center";
-        readyPassDiv.style.fontSize = "20px";
+        readyPassDiv.style.fontSize = "22px";
         readyPassDiv.style.width = "600px";
         readyPassDiv.style.margin = "0 auto";
         readyPassDiv.style.marginTop = "20px";

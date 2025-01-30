@@ -14,19 +14,24 @@
     <script src="scripts/script.js"></script>
 
     <header class="header">
-        <img class="logoImg" src="img/icons/pcIconLogo.svg" alt="Password Generator Logo">
+        <img 
+        class="logoImg" 
+        src="img/icons/pcIconLogo.svg" 
+        alt="Password Generator Logo">
         <h1 class="headling">Password Generator</h1>
     </header>
 
     <h2 class="sub-headling">Make your security stronger</h2>
 
-    <!-- we are here -->
-
     <div class="menu">
         <div class="passLenght">
             <p class="simpleText">Password length</p>
     
-            <input class="passwordLengthHolder" type="number">
+            <input 
+            class="passwordLengthHolder" 
+            type="number" 
+            max="50" 
+            oninput="if(this.value > 50) this.value = 50;">
         </div>
     
         <div class="upper">
@@ -35,7 +40,7 @@
             <label class="switch">
                 <input class="sliderUpper" type="checkbox">
     
-                <span class="sliderUpper"></span>
+                <span class=" slider sliderUpper round"></span>
             </label>
         </div>
     
@@ -45,7 +50,7 @@
             <label class="switch">
                 <input class="sliderSymb" type="checkbox">
     
-                <span class="sliderSymb"></span>
+                <span class=" slider sliderSymb round"></span>
             </label>
         </div>
     
@@ -55,7 +60,7 @@
             <label class="switch">
                 <input class="sliderNumbers" type="checkbox">
     
-                <span class="sliderNumbers"></span>
+                <span class=" slider sliderNumbers round"></span>
             </label>
         </div>
     </div>
