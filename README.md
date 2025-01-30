@@ -9,5 +9,6 @@ Icon: https://iconscout.com/
 In plans:
 
 1. There are also plans to better adapt the site for mobile devices.
+2. Update it for small-screen on PC
 
 created by ell10tt
