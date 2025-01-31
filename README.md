@@ -1,5 +1,7 @@
 # passwordGenerator
 
+Link: https://ell10tt.github.io/passwordGenerator/
+
 This site was created to gain experience in developing WEB applications, as well as to create a future portfolio.
 
 Pictures taken from the site: https://unsplash.com/
